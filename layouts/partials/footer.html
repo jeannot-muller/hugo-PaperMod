@@ -4,9 +4,8 @@
         {{- if site.Copyright }}
         <span>{{ site.Copyright | markdownify }}</span>
         {{- else }}
-        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
+        <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">Dr. Jeannot Muller</a></span>
         {{- end }}
-        {{- print " · "}}
     {{- end }}
 
     {{- with site.Params.footer.text }}
@@ -14,11 +13,11 @@
         {{- print " · "}}
     {{- end }}
 
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+<!--    <span>-->
+<!--        Powered by-->
+<!--        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &-->
+<!--        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>-->
+<!--    </span>-->
 </footer>
 {{- end }}
 
@@ -142,3 +141,5 @@
     });
 </script>
 {{- end }}
+
+<script defer src="https://analytics.teccompanion.com/script.js" data-website-id="c125cbe4-4df3-47d1-86d2-eec000658004"></script>
